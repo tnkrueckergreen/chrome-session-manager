@@ -92,10 +92,10 @@
 ### 🔽 Installation
 
 ```bash
-# 1️⃣ Download the script
+# 1️⃣ Download the script to your Downloaders folder (you can change this to your preferred directory)
 cd ~/Downloads
 
-curl -O https://raw.githubusercontent.com/tnkrueckergreen/chrome-session-manager/refs/heads/main/chrome-session-manager.sh
+curl -O https://raw.githubusercontent.com/tnkrueckergreen/chrome-session-manager/main/chrome-session-manager.sh
 
 # 2️⃣ Make it executable  
 chmod +x chrome-session-manager.sh

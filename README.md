@@ -93,7 +93,7 @@
 
 ```bash
 # 1️⃣ Download the script
-curl -O https://raw.githubusercontent.com/yourusername/chrome-session-manager/main/chrome-session-manager.sh
+curl -O https://raw.githubusercontent.com/tnkrueckergreen/chrome-session-manager/main/chrome-session-manager.sh
 
 # 2️⃣ Make it executable  
 chmod +x chrome-session-manager.sh
@@ -669,7 +669,7 @@ osascript -e 'tell application "System Events" to get name of every process'
 
 ```bash
 # 1️⃣ Fork & Clone
-git clone https://github.com/yourusername/chrome-session-manager.git
+git clone https://github.com/tnkrueckergreen/chrome-session-manager.git
 
 # 2️⃣ Create Feature Branch  
 git checkout -b feature/amazing-new-feature

@@ -92,7 +92,7 @@
 ### 🔽 Installation
 
 ```bash
-# 1️⃣ Download the script to your Downloaders folder (you can change this to your preferred directory)
+# 1️⃣ Download the script to your Downloads folder (you can change this to your preferred directory)
 cd ~/Downloads
 
 curl -O https://raw.githubusercontent.com/tnkrueckergreen/chrome-session-manager/main/chrome-session-manager.sh

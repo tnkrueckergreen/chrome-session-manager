@@ -93,7 +93,7 @@
 
 ```bash
 # 1️⃣ Download the script
-curl -O https://raw.githubusercontent.com/tnkrueckergreen/refs/heads/main/chrome-session-manager/main/chrome_session_manager.sh
+curl -O https://raw.githubusercontent.com/tnkrueckergreen/chrome-session-manager/refs/heads/main/chrome_session_manager.sh
 
 # 2️⃣ Make it executable  
 chmod +x chrome-session-manager.sh

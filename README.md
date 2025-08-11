@@ -1,4 +1,4 @@
-# 🌐 Chrome Session Manager
+# Chrome Session Manager
 
 <div align="center">
 
@@ -9,66 +9,66 @@
 
 **A powerful, user-friendly bash script for macOS that allows you to backup, restore, and manage your Chrome browser sessions with ease.**
 
-*Never lose your browsing session again!* ✨
+*Never lose your browsing session again!*
 
 </div>
 
 ---
 
-## 📋 Table of Contents
+## Table of Contents
 
-- [✨ Features](#-features)
-- [🚀 Quick Start](#-quick-start)
-- [📋 Menu Guide](#-menu-guide)
-- [🔧 Configuration](#-configuration)
-- [⚠️ Limitations](#️-limitations--important-notes)
-- [📁 Technical Details](#-technical-details)
-- [🛠️ Troubleshooting](#️-troubleshooting)
-- [💡 Usage Examples](#-usage-examples)
-- [🤝 Contributing](#-contributing)
+- [Features](#features)
+- [Quick Start](#quick-start)
+- [Menu Guide](#menu-guide)
+- [Configuration](#configuration)
+- [Limitations](#limitations--important-notes)
+- [Technical Details](#technical-details)
+- [Troubleshooting](#troubleshooting)
+- [Usage Examples](#usage-examples)
+- [Contributing](#contributing)
 
 ---
 
-## ✨ Features
+## Features
 
 <table>
 <tr>
 <td width="50%">
 
-### 💾 **Session Management**
-- 🔄 **Complete Session Backup** - Windows, tabs, positions
-- 📜 **Multiple Restore Options** - Latest or specific backups
-- 🎯 **Precise Window Restoration** - Exact positions and states
-- 📌 **Pinned Tab Support** - Maintains pinned status
+### **Session Management**
+- **Complete Session Backup** - Windows, tabs, positions
+- **Multiple Restore Options** - Latest or specific backups
+- **Precise Window Restoration** - Exact positions and states
+- **Pinned Tab Support** - Maintains pinned status
 
 </td>
 <td width="50%">
 
-### 🎨 **User Experience**
-- 🌈 **Beautiful Terminal UI** - Colors and emojis throughout
-- 🚀 **Intuitive Menus** - Simple numbered options
-- ⚡ **Quick Actions** - Fast backup and restore workflow  
-- 🔧 **Chrome Controls** - Show, hide, quit, launch
+### **User Experience**
+- **Beautiful Terminal UI** - Colors and emojis throughout
+- **Intuitive Menus** - Simple numbered options
+- **Quick Actions** - Fast backup and restore workflow  
+- **Chrome Controls** - Show, hide, quit, launch
 
 </td>
 </tr>
 <tr>
 <td width="50%">
 
-### 🗂️ **Backup Management**
-- 📊 **Smart Organization** - Automatic timestamping
-- 🧹 **Cleanup Tools** - Delete old or specific backups
-- 📈 **Usage Statistics** - File sizes and ages
-- 🎛️ **Flexible Storage** - Custom backup directories
+### **Backup Management**
+- **Smart Organization** - Automatic timestamping
+- **Cleanup Tools** - Delete old or specific backups
+- **Usage Statistics** - File sizes and ages
+- **Flexible Storage** - Custom backup directories
 
 </td>
 <td width="50%">
 
-### ⚙️ **Advanced Features**
-- 🔍 **Dependency Checking** - Automatic validation
-- 🛡️ **Error Handling** - Graceful failure recovery
-- 📱 **Status Monitoring** - Real-time Chrome state
-- 🎭 **Window State Management** - Minimized/maximized support
+### **Advanced Features**
+- **Dependency Checking** - Automatic validation
+- **Error Handling** - Graceful failure recovery
+- **Status Monitoring** - Real-time Chrome state
+- **Window State Management** - Minimized/maximized support
 
 </td>
 </tr>
@@ -76,160 +76,161 @@
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
-### 📋 Prerequisites
+### Prerequisites
 
 > **System Requirements**
 
 | Component | Requirement | Status |
 |-----------|-------------|---------|
-| **Operating System** | macOS | 🍎 Required |
-| **Browser** | Google Chrome | 🌐 Required |
-| **Runtime** | Python 3 | 🐍 Usually pre-installed |
-| **Permissions** | Accessibility & Automation | 🔐 Setup required |
+| **Operating System** | macOS | Required |
+| **Browser** | Google Chrome | Required |
+| **Runtime** | Python 3 | Usually pre-installed |
+| **Permissions** | Accessibility & Automation | Setup required |
 
-### 🔽 Installation
+### Installation
 
 ```bash
-# 1️⃣ Download the script to your Downloads folder (you can change this to your preferred directory)
+# 1. Navigate to Downloads folder
 cd ~/Downloads
 
+# 2. Download the script
 curl -O https://raw.githubusercontent.com/tnkrueckergreen/chrome-session-manager/main/chrome-session-manager.sh
 
-# 2️⃣ Make it executable  
+# 3. Make it executable  
 chmod +x chrome-session-manager.sh
 
-# 3️⃣ Run it!
+# 4. Run it!
 ./chrome-session-manager.sh
 ```
 
-### 🎯 First Time Setup
+### First Time Setup
 
 The script will automatically:
 
-- ✅ **Check dependencies** (Python 3, osascript)
-- 📁 **Create backup directory** at `~/Documents/chrome-session-backups/`  
-- 🎨 **Display the beautiful main menu**
+- **Check dependencies** (Python 3, osascript)
+- **Create backup directory** at `~/Documents/chrome-session-backups/`  
+- **Display the beautiful main menu**
 
-> **💡 Pro Tip:** Grant Terminal accessibility permissions in System Preferences before running!
+> **Pro Tip:** Grant Terminal accessibility permissions in System Preferences before running!
 
 ---
 
-## 📋 Menu Guide
+## Menu Guide
 
 <details>
-<summary><strong>🎯 Click to expand the complete menu breakdown</strong></summary>
+<summary><strong>Click to expand the complete menu breakdown</strong></summary>
 
-### 1️⃣ 💾 Backup Current Session
-
-<blockquote>
-<strong>📸 What it captures:</strong>
-<ul>
-<li>🪟 All open Chrome windows</li>
-<li>📑 Every tab with URL and title</li>
-<li>📌 Pinned tab status</li>  
-<li>📐 Window positions and sizes</li>
-<li>🔽 Minimized window states</li>
-</ul>
-
-<strong>🎛️ Post-backup options:</strong>
-<ul>
-<li>🙈 Hide Chrome (keep running)</li>
-<li>🛑 Quit Chrome completely</li>
-<li>✨ Leave Chrome as-is</li>
-</ul>
-</blockquote>
-
-### 2️⃣ 🔄 Restore Latest Backup
+### 1. Backup Current Session
 
 <blockquote>
-<strong>⚡ Quick restoration of your most recent session</strong>
+<strong>What it captures:</strong>
 <ul>
-<li>📅 Shows backup date and time</li>
-<li>📦 Displays file size</li>
-<li>🚀 One-click restore</li>
-<li>➕ Creates new windows (doesn't close existing)</li>
+<li>All open Chrome windows</li>
+<li>Every tab with URL and title</li>
+<li>Pinned tab status</li>  
+<li>Window positions and sizes</li>
+<li>Minimized window states</li>
+</ul>
+
+<strong>Post-backup options:</strong>
+<ul>
+<li>Hide Chrome (keep running)</li>
+<li>Quit Chrome completely</li>
+<li>Leave Chrome as-is</li>
 </ul>
 </blockquote>
 
-### 3️⃣ 📜 Restore from a List  
+### 2. Restore Latest Backup
 
 <blockquote>
-<strong>🎯 Browse and select from all available backups</strong>
+<strong>Quick restoration of your most recent session</strong>
 <ul>
-<li>📊 Sorted by date (newest first)</li>
-<li>📏 File sizes displayed</li>
-<li>🎨 Friendly date formatting</li>
-<li>🔢 Simple numbered selection</li>
+<li>Shows backup date and time</li>
+<li>Displays file size</li>
+<li>One-click restore</li>
+<li>Creates new windows (doesn't close existing)</li>
 </ul>
 </blockquote>
 
-### 4️⃣ 🔧 Chrome Controls
+### 3. Restore from a List  
 
 <blockquote>
-<strong>🎮 Full Chrome process management</strong>
+<strong>Browse and select from all available backups</strong>
+<ul>
+<li>Sorted by date (newest first)</li>
+<li>File sizes displayed</li>
+<li>Friendly date formatting</li>
+<li>Simple numbered selection</li>
+</ul>
+</blockquote>
+
+### 4. Chrome Controls
+
+<blockquote>
+<strong>Full Chrome process management</strong>
 <table>
-<tr><td>🙈 <strong>Hide</strong></td><td>Keep running but invisible</td></tr>
-<tr><td>👀 <strong>Show</strong></td><td>Bring to front and focus</td></tr>
-<tr><td>🛑 <strong>Quit</strong></td><td>Complete shutdown</td></tr>
-<tr><td>🚀 <strong>Launch</strong></td><td>Start Chrome if not running</td></tr>
+<tr><td><strong>Hide</strong></td><td>Keep running but invisible</td></tr>
+<tr><td><strong>Show</strong></td><td>Bring to front and focus</td></tr>
+<tr><td><strong>Quit</strong></td><td>Complete shutdown</td></tr>
+<tr><td><strong>Launch</strong></td><td>Start Chrome if not running</td></tr>
 </table>
 </blockquote>
 
-### 5️⃣ 🗂️ Manage Backups
+### 5. Manage Backups
 
 <blockquote>
-<strong>🧹 Complete backup lifecycle management</strong>
+<strong>Complete backup lifecycle management</strong>
 
-**📊 List All Backups**
-- 📅 Creation dates and times
-- 📦 File sizes  
-- ⏳ Age in days
-- 📈 Sorted chronologically
+**List All Backups**
+- Creation dates and times
+- File sizes  
+- Age in days
+- Sorted chronologically
 
-**🗑️ Smart Cleanup** 
-- 🎯 Delete backups older than 30 days
-- 📊 Shows count before deletion
-- ⚠️ Confirmation required
+**Smart Cleanup** 
+- Delete backups older than 30 days
+- Shows count before deletion
+- Confirmation required
 
-**🚮 Selective Deletion**
-- 🎯 Choose specific backups to remove
-- 📋 Numbered list interface
-- 🛡️ Double confirmation for safety
+**Selective Deletion**
+- Choose specific backups to remove
+- Numbered list interface
+- Double confirmation for safety
 
-**📁 Directory Management**
-- 🎛️ Change backup location (session-only)
-- 🏠 Supports tilde expansion (`~`)
-- ✅ Auto-creates directories
+**Directory Management**
+- Change backup location (session-only)
+- Supports tilde expansion (`~`)
+- Auto-creates directories
 </blockquote>
 
-### 6️⃣ 🚪 Exit
+### 6. Exit
 
 <blockquote>
-<strong>👋 Clean shutdown with friendly goodbye</strong>
+<strong>Clean shutdown with friendly goodbye</strong>
 </blockquote>
 
 </details>
 
 ---
 
-## 🔧 Configuration
+## Configuration
 
-### 📁 Custom Backup Directory
+### Custom Backup Directory
 
 <table>
 <tr>
-<th width="50%">🔄 Temporary (Current Session)</th>
-<th width="50%">💾 Permanent</th>
+<th width="50%">Temporary (Current Session)</th>
+<th width="50%">Permanent</th>
 </tr>
 <tr>
 <td>
 
 Use **Menu Option 5 → 4**
 ```
-🗂️  Manage Backups
- └── 📁 Change Backup Directory
+Manage Backups
+ └── Change Backup Directory
 ```
 
 </td>
@@ -250,7 +251,7 @@ source ~/.zshrc
 </tr>
 </table>
 
-### 🎨 Environment Variables
+### Environment Variables
 
 | Variable | Purpose | Default | Example |
 |----------|---------|---------|---------|
@@ -258,54 +259,54 @@ source ~/.zshrc
 
 ---
 
-## ⚠️ Limitations & Important Notes
+## Limitations & Important Notes
 
 <div align="center">
-<strong>⚠️ CRITICAL: Single Profile Operation</strong>
+<strong>WARNING: Single Profile Operation</strong>
 </div>
 
-### 🔍 How Chrome Profiles Work
+### How Chrome Profiles Work
 
 ```mermaid
 graph LR
-    A[Chrome Profile 1<br/>🏢 Work] --> C[Chrome Process]
-    B[Chrome Profile 2<br/>🏠 Personal] --> C
-    C --> D[🖥️ Multiple Windows]
+    A[Chrome Profile 1<br/>Work] --> C[Chrome Process]
+    B[Chrome Profile 2<br/>Personal] --> C
+    C --> D[Multiple Windows]
 ```
 
-### 📸 What Happens During Backup
+### What Happens During Backup
 
 > **The script captures ALL Chrome windows currently open, regardless of profile**
 
 | Scenario | What Gets Backed Up |
 |----------|-------------------|
-| 🏢 Only Work profile open | ✅ Only work tabs |
-| 🏠 Only Personal profile open | ✅ Only personal tabs |  
-| 🏢🏠 Both profiles open | ⚠️ **ALL tabs from BOTH profiles** |
+| Only Work profile open | Only work tabs |
+| Only Personal profile open | Only personal tabs |  
+| Both profiles open | **ALL tabs from BOTH profiles** |
 
-### 🔄 What Happens During Restore
+### What Happens During Restore
 
 > **All restored tabs open in whatever profile Chrome chooses (usually default)**
 
 ```
-📁 Backup File Contains:
-├── 🏢 Work tabs (Gmail, Slack, etc.)
-└── 🏠 Personal tabs (YouTube, Facebook, etc.)
+Backup File Contains:
+├── Work tabs (Gmail, Slack, etc.)
+└── Personal tabs (YouTube, Facebook, etc.)
 
-🔄 After Restore:
-└── 🏢 Work Profile
-    ├── 📧 Gmail ✅
-    ├── 💬 Slack ✅  
-    ├── 📺 YouTube ⚠️ (Wrong profile!)
-    └── 👥 Facebook ⚠️ (Wrong profile!)
+After Restore:
+└── Work Profile
+    ├── Gmail ✓
+    ├── Slack ✓  
+    ├── YouTube (Wrong profile!)
+    └── Facebook (Wrong profile!)
 ```
 
-### 💡 Best Practices for Multi-Profile Users
+### Best Practices for Multi-Profile Users
 
 <details>
-<summary><strong>🎯 Click for detailed workflow recommendations</strong></summary>
+<summary><strong>Click for detailed workflow recommendations</strong></summary>
 
-#### ✅ **Recommended Workflow**
+#### **Recommended Workflow**
 
 1. **Before Backup:**
    ```bash
@@ -330,29 +331,29 @@ graph LR
    mv chrome-session-2024-01-15T17-30-00.json personal-session-evening.json
    ```
 
-#### ⚠️ **What to Avoid**
+#### **What to Avoid**
 
-- ❌ **Don't backup with multiple profiles open** (causes mixing)
-- ❌ **Don't assume restored tabs go to the "right" profile**
-- ❌ **Don't rely on the script for profile separation**
+- **Don't backup with multiple profiles open** (causes mixing)
+- **Don't assume restored tabs go to the "right" profile**
+- **Don't rely on the script for profile separation**
 
 </details>
 
 ---
 
-## 📁 Technical Details
+## Technical Details
 
-### 🏗️ Backup File Structure
+### Backup File Structure
 
 <details>
-<summary><strong>📊 JSON Schema & Examples</strong></summary>
+<summary><strong>JSON Schema & Examples</strong></summary>
 
-#### 📝 File Naming Convention
+#### File Naming Convention
 ```
 chrome-session-YYYY-MM-DDTHH-MM-SS.json
 ```
 
-#### 🗂️ JSON Structure
+#### JSON Structure
 ```json
 {
   "createdAt": "2024-01-15T09:30:00.000Z",
@@ -378,7 +379,7 @@ chrome-session-YYYY-MM-DDTHH-MM-SS.json
 }
 ```
 
-#### 📐 Bounds Format
+#### Bounds Format
 ```
 [x, y, width, height]
 ├── x: Distance from left edge
@@ -389,7 +390,7 @@ chrome-session-YYYY-MM-DDTHH-MM-SS.json
 
 </details>
 
-### 🔧 Dependencies & Technologies
+### Dependencies & Technologies
 
 | Component | Purpose | Implementation |
 |-----------|---------|----------------|
@@ -400,61 +401,61 @@ chrome-session-YYYY-MM-DDTHH-MM-SS.json
 
 ---
 
-## 🛠️ Troubleshooting
+## Troubleshooting
 
 <details>
-<summary><strong>🚨 Common Issues & Solutions</strong></summary>
+<summary><strong>Common Issues & Solutions</strong></summary>
 
-### 🔐 Permission Issues
+### Permission Issues
 
 <blockquote>
-<strong>❌ Error:</strong> "AppleScript permission denied"
+<strong>Error:</strong> "AppleScript permission denied"
 
-<strong>✅ Solution:</strong>
+<strong>Solution:</strong>
 <ol>
-<li>🍎 <strong>System Preferences</strong> → <strong>Security & Privacy</strong> → <strong>Privacy</strong></li>
-<li>🔓 Click the lock icon and enter your password</li>
-<li>♿ Select <strong>Accessibility</strong> from left panel</li>
-<li>➕ Add <strong>Terminal</strong> (or your terminal app)</li>
-<li>✅ Enable the checkbox next to it</li>
-<li>🤖 Select <strong>Automation</strong> from left panel</li>
-<li>➕ Find <strong>Terminal</strong> and enable <strong>Google Chrome</strong></li>
+<li><strong>System Preferences</strong> → <strong>Security & Privacy</strong> → <strong>Privacy</strong></li>
+<li>Click the lock icon and enter your password</li>
+<li>Select <strong>Accessibility</strong> from left panel</li>
+<li>Add <strong>Terminal</strong> (or your terminal app)</li>
+<li>Enable the checkbox next to it</li>
+<li>Select <strong>Automation</strong> from left panel</li>
+<li>Find <strong>Terminal</strong> and enable <strong>Google Chrome</strong></li>
 </ol>
 </blockquote>
 
-### 🚫 Script Won't Execute
+### Script Won't Execute
 
 <blockquote>
-<strong>❌ Error:</strong> "Permission denied"
+<strong>Error:</strong> "Permission denied"
 
 ```bash
-# ✅ Make script executable
+# Make script executable
 chmod +x chrome-session-manager.sh
 
-# ✅ Verify executable status
+# Verify executable status
 ls -la chrome-session-manager.sh
 # Should show: -rwxr-xr-x
 ```
 </blockquote>
 
-### 🔍 Missing Dependencies
+### Missing Dependencies
 
 <blockquote>
-<strong>❌ Error:</strong> "'python3' not found"
+<strong>Error:</strong> "'python3' not found"
 
 ```bash
-# ✅ Check if Python 3 is installed
+# Check if Python 3 is installed
 which python3
 python3 --version
 
-# ✅ Install if missing (using Homebrew)
+# Install if missing (using Homebrew)
 brew install python
 ```
 
-<strong>❌ Error:</strong> "'osascript' not found"
+<strong>Error:</strong> "'osascript' not found"
 
 ```bash
-# ✅ osascript should be built into macOS
+# osascript should be built into macOS
 which osascript
 
 # If missing, you're likely not on macOS
@@ -462,42 +463,42 @@ uname -s  # Should return "Darwin"
 ```
 </blockquote>
 
-### 📁 Backup Directory Problems
+### Backup Directory Problems
 
 <blockquote>
-<strong>❌ Error:</strong> "Cannot create backup directory"
+<strong>Error:</strong> "Cannot create backup directory"
 
 ```bash
-# ✅ Check current backup location
+# Check current backup location
 echo $CHROME_SESSION_BACKUP_DIR
 
-# ✅ Manually create directory
+# Manually create directory
 mkdir -p ~/Documents/chrome-session-backups
 
-# ✅ Check permissions
+# Check permissions
 ls -la ~/Documents/
 ```
 </blockquote>
 
-### 🌐 Chrome Won't Respond
+### Chrome Won't Respond
 
 <blockquote>
-<strong>❌ Error:</strong> Chrome doesn't launch or respond to commands
+<strong>Error:</strong> Chrome doesn't launch or respond to commands
 
 ```bash
-# ✅ Test basic AppleScript communication
+# Test basic AppleScript communication
 osascript -e 'tell application "Google Chrome" to activate'
 
-# ✅ Force quit and restart Chrome
+# Force quit and restart Chrome
 pkill -f "Google Chrome"
 open -a "Google Chrome"
 
-# ✅ Check Chrome installation
+# Check Chrome installation
 ls -la /Applications/Google\ Chrome.app
 ```
 </blockquote>
 
-### 🔧 Advanced Debugging
+### Advanced Debugging
 
 ```bash
 # Enable verbose output for troubleshooting
@@ -514,14 +515,14 @@ osascript -e 'tell application "System Events" to get name of every process'
 
 ---
 
-## 💡 Usage Examples
+## Usage Examples
 
 <details>
-<summary><strong>🎯 Real-World Workflows & Scenarios</strong></summary>
+<summary><strong>Real-World Workflows & Scenarios</strong></summary>
 
-### 📅 **Daily Workflow Management**
+### **Daily Workflow Management**
 
-#### 🌅 Morning Routine
+#### Morning Routine
 ```bash
 # 1. Start with clean slate
 ./chrome-session-manager.sh
@@ -534,7 +535,7 @@ osascript -e 'tell application "System Events" to get name of every process'
 └── Select: work-session-2024-01-14.json
 ```
 
-#### 🌅 → 🌆 Workflow Transition  
+#### Workflow Transition  
 ```bash
 # End of work day
 ./chrome-session-manager.sh
@@ -547,9 +548,9 @@ osascript -e 'tell application "System Events" to get name of every process'
 └── Select: personal-session-evening.json
 ```
 
-### 🔄 **Project-Based Sessions**
+### **Project-Based Sessions**
 
-#### 📊 Research Project
+#### Research Project
 ```bash
 # Backup current research tabs
 ./chrome-session-manager.sh → Option 1
@@ -560,7 +561,7 @@ osascript -e 'tell application "System Events" to get name of every process'
 └── Select research backup
 ```
 
-#### 💻 Development Work
+#### Development Work
 ```bash
 # Save development environment
 ├── GitHub repos (3 tabs)
@@ -572,17 +573,17 @@ osascript -e 'tell application "System Events" to get name of every process'
 ./chrome-session-manager.sh → Option 2 (Latest)
 ```
 
-### 🛡️ **Emergency Recovery**
+### **Emergency Recovery**
 
-#### 💥 Chrome Crash Recovery
+#### Chrome Crash Recovery
 ```bash
 # Chrome crashed with 20+ important tabs
 ./chrome-session-manager.sh
 ├── Option 2 (Restore Latest)
-└── ✅ All tabs restored in seconds!
+└── All tabs restored in seconds!
 ```
 
-#### 🔄 System Reboot
+#### System Reboot
 ```bash
 # Before planned restart:
 ./chrome-session-manager.sh → Option 1 (Backup)
@@ -591,9 +592,9 @@ osascript -e 'tell application "System Events" to get name of every process'
 ./chrome-session-manager.sh → Option 2 (Restore Latest)
 ```
 
-### 📊 **Session Organization**
+### **Session Organization**
 
-#### 🗂️ Weekly Backup Cleanup
+#### Weekly Backup Cleanup
 ```bash
 ./chrome-session-manager.sh
 ├── Option 5 (Manage Backups)
@@ -601,20 +602,20 @@ osascript -e 'tell application "System Events" to get name of every process'
 └── Review and clean old sessions
 ```
 
-#### 📈 **Backup Statistics**
+#### **Backup Statistics**
 ```
-📊 Backup Analysis:
-├── 📅 This Week: 12 backups
-├── 📦 Average Size: 15KB  
-├── 🏆 Largest Session: 47 tabs
-└── 🧹 Cleanup Suggestion: 8 old backups
+Backup Analysis:
+├── This Week: 12 backups
+├── Average Size: 15KB  
+├── Largest Session: 47 tabs
+└── Cleanup Suggestion: 8 old backups
 ```
 
 </details>
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 <div align="center">
 
@@ -624,13 +625,13 @@ osascript -e 'tell application "System Events" to get name of every process'
 
 </div>
 
-### 🎯 Ways to Contribute
+### Ways to Contribute
 
 <table>
 <tr>
 <td width="25%">
 
-#### 🐛 **Report Bugs**
+#### **Report Bugs**
 - Use issue templates
 - Provide system info
 - Include error messages
@@ -639,7 +640,7 @@ osascript -e 'tell application "System Events" to get name of every process'
 </td>
 <td width="25%">
 
-#### ✨ **Suggest Features**
+#### **Suggest Features**
 - Multi-profile support
 - GUI interface
 - Cloud backup sync
@@ -648,7 +649,7 @@ osascript -e 'tell application "System Events" to get name of every process'
 </td>
 <td width="25%">
 
-#### 💻 **Code Contributions**
+#### **Code Contributions**
 - Bug fixes
 - Performance improvements
 - New features
@@ -657,7 +658,7 @@ osascript -e 'tell application "System Events" to get name of every process'
 </td>
 <td width="25%">
 
-#### 📖 **Documentation**
+#### **Documentation**
 - Tutorial videos
 - Use case examples
 - Translation
@@ -667,28 +668,28 @@ osascript -e 'tell application "System Events" to get name of every process'
 </tr>
 </table>
 
-### 🔄 Development Workflow
+### Development Workflow
 
 ```bash
-# 1️⃣ Fork & Clone
+# 1. Fork & Clone
 git clone https://github.com/tnkrueckergreen/chrome-session-manager.git
 
-# 2️⃣ Create Feature Branch  
+# 2. Create Feature Branch  
 git checkout -b feature/amazing-new-feature
 
-# 3️⃣ Make Changes & Test
+# 3. Make Changes & Test
 ./chrome-session-manager.sh  # Test thoroughly
 
-# 4️⃣ Commit & Push
-git commit -m "✨ Add amazing new feature"
+# 4. Commit & Push
+git commit -m "Add amazing new feature"
 git push origin feature/amazing-new-feature
 
-# 5️⃣ Create Pull Request
+# 5. Create Pull Request
 ```
 
 ---
 
-## 📄 License & Legal
+## License & Legal
 
 <div align="center">
 
@@ -698,46 +699,46 @@ git push origin feature/amazing-new-feature
 
 </div>
 
-### 🛡️ Disclaimer
+### Disclaimer
 
-> **⚠️ Important:** This script modifies Chrome browser state and requires system permissions. Use responsibly:
+> **Important:** This script modifies Chrome browser state and requires system permissions. Use responsibly:
 > 
-> - ✅ **Test first** with non-critical browsing sessions
-> - 🔒 **Keep important bookmarks** separately backed up  
-> - 📱 **Grant only necessary permissions** (Accessibility, Automation)
-> - 🚫 **Not responsible** for data loss or browser issues
+> - **Test first** with non-critical browsing sessions
+> - **Keep important bookmarks** separately backed up  
+> - **Grant only necessary permissions** (Accessibility, Automation)
+> - **Not responsible** for data loss or browser issues
 
 ---
 
-## 🆘 Support & Community
+## Support & Community
 
 <div align="center">
 
-### 💬 Get Help
+### Get Help
 
 [![GitHub Issues](https://img.shields.io/badge/GitHub-Issues-red?style=for-the-badge&logo=github)](../../issues)
 [![Stack Overflow](https://img.shields.io/badge/Stack%20Overflow-chrome--session--manager-orange?style=for-the-badge&logo=stackoverflow)](https://stackoverflow.com/questions/tagged/chrome-session-manager)
 
-### 🚀 Quick Support Checklist
+### Quick Support Checklist
 
 </div>
 
 <details>
-<summary><strong>🔧 Before Asking for Help</strong></summary>
+<summary><strong>Before Asking for Help</strong></summary>
 
-#### ✅ **Verify Prerequisites**
+#### **Verify Prerequisites**
 - [ ] Running on macOS
 - [ ] Google Chrome installed  
 - [ ] Python 3 available (`python3 --version`)
 - [ ] Terminal has required permissions
 
-#### ✅ **Try Basic Troubleshooting**
+#### **Try Basic Troubleshooting**
 - [ ] Restart Chrome completely
 - [ ] Run script with clean Chrome state
 - [ ] Check backup directory permissions
 - [ ] Test with simple AppleScript: `osascript -e 'tell application "Google Chrome" to activate'`
 
-#### ✅ **Gather Information**
+#### **Gather Information**
 - [ ] macOS version (`sw_vers`)
 - [ ] Chrome version (Chrome → About Google Chrome)
 - [ ] Python version (`python3 --version`)
@@ -750,9 +751,9 @@ git push origin feature/amazing-new-feature
 
 <div align="center">
 
-### 🌟 **Star this repository if it saved your browsing session!** ⭐
+### **Star this repository if it saved your browsing session!**
 
-**Happy browsing!** 🌐✨
+**Happy browsing!**
 
 ---
 
